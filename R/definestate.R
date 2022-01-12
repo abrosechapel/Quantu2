@@ -60,7 +60,7 @@ definestate <- function(a,state){
     a<-c(q_1=array(list(c(q1))),q_2=array(list(c(q0))),q_3=array(list(c(q1))))
   }
   else if (length(a)==3 & state==110) {
-    a<-c(q_1=array(list(c(q1))),q_2=array(list(c(q1))),q_3=array(list(c(q1))))
+    a<-c(q_1=array(list(c(q1))),q_2=array(list(c(q1))),q_3=array(list(c(q0))))
   }
   else if (length(a)==3 & state==111) {
     a<-c(q_1=array(list(c(q1))),q_2=array(list(c(q1))),q_3=array(list(c(q1))))
@@ -113,8 +113,4 @@ definestate <- function(a,state){
   else if (length(a)==4 & state==1111) {
     a<-c(q_1=array(list(c(q1))),q_2=array(list(c(q1))),q_3=array(list(c(q1))),q_4=array(list(c(q1))))
   }
-
-
-
-
 }
